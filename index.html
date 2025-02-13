@@ -2,860 +2,855 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Developer</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/tailwind.css">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <!-- Scripts -->
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <!-- Scripts -->
+  <!--<script src="https://cdn.tailwindcss.com"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
 </head>
 
 <body class="bg-gray-50">
 
-    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-10 border-b border-gray-100 z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl mr-3">
-                        AD
-                    </div>
-                    <span class="text-2xl font-bold gradient-text">Alpha Developer</span>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Home</a>
-                    <a href="#about" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">About</a>
-                    <a href="#skills" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Skills</a>
-                    <a href="#projects" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Projects</a>
-                    <a href="#contact" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">Let's
-                        Talk</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                        <svg class="h-6 w-6" id="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-16 6h16" />
-                        </svg>
-                        <svg class="h-6 w-6 hidden" id="close-icon" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none absolute left-0 right-0 top-[80px] bg-white">
-                <div class="px-4 py-3 border-t border-gray-100">
-                    <div class="flex flex-col space-y-2">
-                        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Home</a>
-                        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">About</a>
-                        <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Skills</a>
-                        <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Projects</a>
-                        <a href="https://blog.codexoft.tech" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Blog</a>
-                        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700">Let's
-                            Talk</a>
-                    </div>
-                </div>
-            </div>
+<nav class="bg-white/80 backdrop-blur-md fixed w-full z-10 border-b border-gray-100 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-20">
+      <div class="flex-shrink-0 flex items-center">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl mr-3">
+          AD
         </div>
-    </nav>
+        <span class="text-2xl font-bold gradient-text">Alpha Developer</span>
+      </div>
 
-    <!-- Enhanced Hero Section -->
-    <section id="home" class="min-h-screen pt-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-        <!-- Decorative Elements -->
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-30"></div>
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Home</a>
+        <a href="#about" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">About</a>
+        <a href="#skills" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Skills</a>
+        <a href="#projects" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Projects</a>
+        <a href="#contact" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">Let's
+          Talk</a>
+      </div>
 
-        <div class="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <!-- Left Column - Content -->
-            <div class="text-center z-10 lg:text-left">
-                <div class="flex items-center lg:justify-start justify-center space-x-4 mb-6">
-                    <div class="w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-                    <span class="text-gray-600 font-medium">Welcome to my portfolio</span>
-                </div>
-
-                <h1 class="text-5xl lg:text-6xl font-bold mb-6">
-                    <span class="block mb-2">I am</span>
-                    <span class="gradient-text typing-animation"></span>
-                </h1>
-
-                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                    Full-stack developer specializing in building exceptional digital experiences. Transforming ideas into elegant solutions through clean code and intuitive design.
-                </p>
-
-                <div class="flex flex-wrap gap-4 mb-12  justify-center lg:justify-start">
-                    <div class="flex items-center space-x-2 bg-blue-50 px-4 py-2 rounded-full">
-                        <i data-feather="check-circle" class="w-5 h-5 text-blue-600"></i>
-                        <span class="text-gray-700">3+ Years Experience</span>
-                    </div>
-                    <div class="flex items-center space-x-2 bg-indigo-50 px-4 py-2 rounded-full">
-                        <i data-feather="users" class="w-5 h-5 text-indigo-600"></i>
-                        <span class="text-gray-700">25+ Projects Delivered</span>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-                    <a href="#projects" class="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all">
-                        View My Work
-                        <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </a>
-                    <a href="#contact" class="inline-flex items-center px-8 py-3 rounded-full border-2 border-gray-300 text-gray-700 font-medium hover:border-blue-500 hover:text-blue-500 transition-all">
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-
-            <div class="relative z-10 lg:block hidden">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl transform rotate-6"></div>
-                    <img src="assets/images/me.jpg" alt="Developer at work" class="relative rounded-3xl shadow-xl">
-                </div>
-
-                <div class="absolute -top-10 right-10 floating">
-                    <div class="bg-white p-4 rounded-xl shadow-lg">
-                        <i data-feather="code" class="w-8 h-8 text-blue-600"></i>
-                    </div>
-                </div>
-                <div class="absolute -bottom-10 left-10 floating" style="animation-delay: 1s;">
-                    <div class="bg-white p-4 rounded-xl shadow-lg">
-                        <i data-feather="smartphone" class="w-8 h-8 text-indigo-600"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-gradient-to-b from-white to-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Main Content  -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- Left Column - Personal Info -->
-                <div class="space-y-8">
-                    <div class="relative">
-                        <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-                        <div class="w-20 h-2 bg-blue-600 rounded-full mb-8"></div>
-
-                        <div class="prose prose-lg text-gray-600 space-y-6">
-                            <p>
-                                I am Syed Umair Ul Hassan, a Full Stack Website Developer and AI Engineer with expertise in building scalable and high-performance web applications. With a strong background in Python, Django, and JavaScript, I specialize in both frontend and backend development, seamlessly integrating AI-powered solutions into modern applications. My experience spans multiple industries, where I have developed mobile and web-based platforms, AI-driven image processing tools, and search engine applications. I am proficient in technologies such as React.js, Django REST Framework, PostgreSQL, MongoDB, TensorFlow, PyTorch, and ONNX. My ability to design and implement RESTful APIs, deploy AI models, and manage VPS hosting using AWS and Docker makes me a versatile developer capable of handling complex software architectures.
-                            </p>
-                            <p>
-                                I hold a Bachelor's degree in Software Engineering from Riphah International University and have worked with companies such as Funsol Technologies, Mobify Technology, and Gensis Technology. Throughout my career, I have played a key role in developing projects like FunMob, an ad management system, Orion Search Engine, and FramMe Photo Editor. My passion for AI development and automation drives me to create innovative solutions that enhance performance and user experience. I am constantly learning and exploring new technologies to stay ahead in the rapidly evolving tech industry, while also enjoying my interests in reading and traveling.
-                            </p>
-                            <p>
-                                Beyond my technical expertise, I thrive in dynamic and collaborative environments, where I enjoy solving complex problems and optimizing workflows. My experience in full-stack development has allowed me to take on leadership roles, mentoring junior developers and guiding teams in delivering high-quality software solutions. I have a keen eye for detail and a strong commitment to writing clean, efficient, and scalable code. Whether it’s architecting AI-powered applications, implementing cloud-based solutions, or fine-tuning model performance, I am always focused on creating seamless and impactful user experiences.
-                            </p>
-                            <p>
-                                In addition to my professional endeavors, I am passionate about continuous learning and staying updated with the latest advancements in AI, web development, and software engineering. I actively participate in tech communities, engage in open-source contributions, and explore innovative projects that push the boundaries of AI integration in web applications. My curiosity and drive for innovation keep me motivated to experiment with new technologies and methodologies, ensuring that I remain at the forefront of the industry.
-                            </p>
-                        </div>
-
-                        <!-- Key Focus Areas -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-                            <div class="p-6 bg-white rounded-xl shadow-lg experience-card">
-                                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
-                                    <i data-feather="layout" class="w-6 h-6 text-blue-600"></i>
-                                </div>
-                                <h3 class="text-xl font-semibold mb-2">Architecture Design</h3>
-                                <p class="text-gray-600">Creating scalable and maintainable application architectures
-                                </p>
-                            </div>
-
-                            <div class="p-6 bg-white rounded-xl shadow-lg experience-card">
-                                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
-                                    <i data-feather="users" class="w-6 h-6 text-blue-600"></i>
-                                </div>
-                                <h3 class="text-xl font-semibold mb-2">Team Leadership</h3>
-                                <p class="text-gray-600">Leading development teams and mentoring junior developers</p>
-                            </div>
-                        </div>
-
-                        <!-- Professional Stats -->
-                        <div class="flex flex-wrap gap-8 mt-12">
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-blue-600 mb-2">3+</div>
-                                <div class="text-gray-600">Years Experience</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-blue-600 mb-2">25+</div>
-                                <div class="text-gray-600">Projects Completed</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-blue-600 mb-2">30+</div>
-                                <div class="text-gray-600">Happy Clients</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column - Experience & Skills -->
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-xl shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-6">Professional Journey</h3>
-
-                        <!-- Experience Timeline -->
-                        <div class="space-y-8">
-                            <div class="relative pl-8 border-l-2 border-blue-200">
-                                <div class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"></div>
-                                <div class="mb-1 flex items-center justify-between">
-                                    <h4 class="text-lg font-semibold text-gray-900">AI Engineer & OSINET Engineer</h4>
-                                    <span class="text-sm text-gray-500">2024 - Present</span>
-                                </div>
-                                <p class="text-gray-600">
-                                    Currently, I am working as a Full Stack Developer & AI Engineer at Gensis Technology. I am leading the development of Orion Search Engine, a scalable web crawler and search engine leveraging Selenium, Django, Docker, and Elasticsearch. Additionally, I am working on 3oc Cup, a social engagement mobile application developed with React Native and Django. My role involves architecting high-performance applications, optimizing AI models, and managing cloud-based deployments. With a strong background in AI, full-stack development, and automation, I continue to push the boundaries of innovation, ensuring that my projects deliver exceptional user experiences and cutting-edge technological solutions.
-                                </p>
-                            </div>
-
-                            <div class="relative pl-8 border-l-2 border-blue-200">
-                                <div class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"></div>
-                                <div class="mb-1 flex items-center justify-between">
-                                    <h4 class="text-lg font-semibold text-gray-900">Full-Stack Developer</h4>
-                                    <span class="text-sm text-gray-500">2022 - 2023</span>
-                                </div>
-                                <p class="text-gray-600">
-                                    As a Full Stack Developer at Funsol Technologies, I worked on multiple large-scale projects, including FunMob, a mobile ad management system similar to Google AdMob. I built the backend using Django and PostgreSQL while integrating React.js and Django REST Framework (DRF) for frontend and API development. During this time, I also transitioned into AI-powered application development, working on Cognise, a text-to-image and image-to-image tool using Stable Diffusion, and FunSwap, a face-swapping product. Additionally, I gained hands-on experience with Docker, VPS hosting, DigitalOcean, and AI model integration. In early 2024, I joined Mobify Technology as an AI Engineer, leading the development of FramMe Photo Editor & Collage, where I built AI-driven features for background removal, face swapping, and image enhancement using PyTorch, TensorFlow, and ONNX.
-                                </p>
-                            </div>
-
-                            <div class="relative pl-8 border-l-2 border-blue-200">
-                                <div class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"></div>
-                                <div class="mb-1 flex items-center justify-between">
-                                    <h4 class="text-lg font-semibold text-gray-900">Frontend Developer</h4>
-                                    <span class="text-sm text-gray-500">2019 - 2021</span>
-                                </div>
-                                <p class="text-gray-600">
-                                    I began my professional journey as a Junior Web Developer at Softigh, where I worked on portfolio websites like Softigh.com, TripleMG, and AlkaramTextile. I was responsible for both frontend and backend development, using HTML, CSS, JavaScript, jQuery, Bootstrap, and custom PHP with MySQL. I also handled UI/UX design using Figma, ensuring a seamless user experience. This role provided me with a solid foundation in web development and honed my ability to create dynamic and responsive websites. Additionally, I worked as a Backend Developer at Greelogix (2022) on the Chekmate project, implementing key functionalities such as user management, SMS/email notifications, and reporting features using Laravel and MySQL.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Current Focus -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-6">Current Focus</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start gap-4">
-                                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i data-feather="trending-up" class="w-5 h-5 text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">Performance Optimization</h4>
-                                    <p class="text-gray-600">Enhancing application performance and user experience</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i data-feather="shield" class="w-5 h-5 text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">Security Implementation</h4>
-                                    <p class="text-gray-600">Implementing robust security measures and best practices
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i data-feather="code" class="w-5 h-5 text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">Modern Technologies</h4>
-                                    <p class="text-gray-600">Exploring and implementing cutting-edge tech solutions</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="skills" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900">Technical Expertise</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-                <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-                    Combining modern technologies with provenmethodologies to deliver exceptional solutions
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-               <!-- Frontend Development -->
-<div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300">
-    <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
-        <i data-feather="layout" class="w-8 h-8 text-blue-600"></i>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+          <svg class="h-6 w-6" id="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16m-16 6h16"/>
+          </svg>
+          <svg class="h-6 w-6 hidden" id="close-icon" fill="none" stroke="currentColor"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
     </div>
-    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
-    <div class="space-y-4">
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">React.js</span>
-                <span class="text-sm text-blue-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[90%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none absolute left-0 right-0 top-[80px] bg-white">
+      <div class="px-4 py-3 border-t border-gray-100">
+        <div class="flex flex-col space-y-2">
+          <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Home</a>
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">About</a>
+          <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Skills</a>
+          <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Projects</a>
+          <a href="https://blog.codexoft.tech" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Blog</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700">Let's
+            Talk</a>
         </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">React Native</span>
-                <span class="text-sm text-blue-600 font-semibold">Intermediate</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[75%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">HTML5 / CSS3 / JavaScript</span>
-                <span class="text-sm text-blue-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[95%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">Bootstrap / Tailwind CSS</span>
-                <span class="text-sm text-blue-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[90%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">jQuery / Ajax</span>
-                <span class="text-sm text-blue-600 font-semibold">Intermediate</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[80%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+</nav>
 
-<!-- Backend Development -->
-<div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300">
-    <div class="w-14 h-14 bg-green-50 rounded-lg flex items-center justify-center mb-6">
-        <i data-feather="server" class="w-8 h-8 text-green-600"></i>
+<!-- Enhanced Hero Section -->
+<section id="home" class="min-h-screen pt-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+  <!-- Decorative Elements -->
+  <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-30"></div>
+
+  <div class="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Left Column - Content -->
+    <div class="text-center z-10 lg:text-left">
+      <div class="flex items-center lg:justify-start justify-center space-x-4 mb-6">
+        <div class="w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
+        <span class="text-gray-600 font-medium">Welcome to my portfolio</span>
+      </div>
+
+      <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+        <span class="block mb-2">I am</span>
+        <span class="gradient-text typing-animation"></span>
+      </h1>
+
+      <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+        Full-stack developer specializing in building exceptional digital experiences. Transforming ideas into elegant solutions through clean code and intuitive design.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mb-12  justify-center lg:justify-start">
+        <div class="flex items-center space-x-2 bg-blue-50 px-4 py-2 rounded-full">
+          <i data-feather="check-circle" class="w-5 h-5 text-blue-600"></i>
+          <span class="text-gray-700">3+ Years Experience</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-indigo-50 px-4 py-2 rounded-full">
+          <i data-feather="users" class="w-5 h-5 text-indigo-600"></i>
+          <span class="text-gray-700">25+ Projects Delivered</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+        <a href="#projects" class="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all">
+          View My Work
+          <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+        </a>
+        <a href="#contact" class="inline-flex items-center px-8 py-3 rounded-full border-2 border-gray-300 text-gray-700 font-medium hover:border-blue-500 hover:text-blue-500 transition-all">
+          Contact Me
+        </a>
+      </div>
     </div>
-    <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
-    <div class="space-y-4">
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">Python / Django</span>
-                <span class="text-sm text-green-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[95%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
+
+    <div class="relative z-10 lg:block hidden">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl transform rotate-6"></div>
+        <img src="assets/images/me.jpg" alt="Developer at work" class="relative rounded-3xl shadow-xl">
+      </div>
+
+      <div class="absolute -top-10 right-10 floating">
+        <div class="bg-white p-4 rounded-xl shadow-lg">
+          <i data-feather="code" class="w-8 h-8 text-blue-600"></i>
         </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">Django REST Framework</span>
-                <span class="text-sm text-green-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[90%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
+      </div>
+      <div class="absolute -bottom-10 left-10 floating" style="animation-delay: 1s;">
+        <div class="bg-white p-4 rounded-xl shadow-lg">
+          <i data-feather="smartphone" class="w-8 h-8 text-indigo-600"></i>
         </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">PHP</span>
-                <span class="text-sm text-green-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[90%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">MySQL / PostgreSQL</span>
-                <span class="text-sm text-green-600 font-semibold">Intermediate</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[85%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">MongoDB</span>
-                <span class="text-sm text-green-600 font-semibold">Intermediate</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[75%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">REST APIs / GraphQL</span>
-                <span class="text-sm text-green-600 font-semibold">Advanced</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[90%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
-        <div>
-            <div class="flex justify-between items-center mb-2">
-                <span class="text-gray-700 font-medium">AWS / Docker / VPS Hosting</span>
-                <span class="text-sm text-green-600 font-semibold">Intermediate</span>
-            </div>
-            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div class="w-[80%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
 
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-24 bg-gradient-to-b from-white to-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Main Content  -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <!-- Left Column - Personal Info -->
+      <div class="space-y-8">
+        <div class="relative">
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+          <div class="w-20 h-2 bg-blue-600 rounded-full mb-8"></div>
+
+          <div class="prose prose-lg text-gray-600 space-y-6">
+            <p>
+              I am Syed Umair Ul Hassan, a Full Stack Website Developer and AI Engineer with expertise in building scalable and high-performance web applications. With a strong background in Python, Django, and JavaScript, I specialize in both frontend and backend development, seamlessly integrating AI-powered solutions into modern applications. My experience spans multiple industries, where I have developed mobile and web-based platforms, AI-driven image processing tools, and search engine applications. I am proficient in technologies such as React.js, Django REST Framework, PostgreSQL, MongoDB, TensorFlow, PyTorch, and ONNX. My ability to design and implement RESTful APIs, deploy AI models, and manage VPS hosting using AWS and Docker makes me a versatile developer capable of handling complex software architectures.
+            </p>
+            <p>
+              I hold a Bachelor's degree in Software Engineering from Riphah International University and have worked with companies such as Funsol Technologies, Mobify Technology, and Gensis Technology. Throughout my career, I have played a key role in developing projects like FunMob, an ad management system, Orion Search Engine, and FramMe Photo Editor. My passion for AI development and automation drives me to create innovative solutions that enhance performance and user experience. I am constantly learning and exploring new technologies to stay ahead in the rapidly evolving tech industry, while also enjoying my interests in reading and traveling.
+            </p>
+            <p>
+              Beyond my technical expertise, I thrive in dynamic and collaborative environments, where I enjoy solving complex problems and optimizing workflows. My experience in full-stack development has allowed me to take on leadership roles, mentoring junior developers and guiding teams in delivering high-quality software solutions. I have a keen eye for detail and a strong commitment to writing clean, efficient, and scalable code. Whether it’s architecting AI-powered applications, implementing cloud-based solutions, or fine-tuning model performance, I am always focused on creating seamless and impactful user experiences.
+            </p>
+            <p>
+              In addition to my professional endeavors, I am passionate about continuous learning and staying updated with the latest advancements in AI, web development, and software engineering. I actively participate in tech communities, engage in open-source contributions, and explore innovative projects that push the boundaries of AI integration in web applications. My curiosity and drive for innovation keep me motivated to experiment with new technologies and methodologies, ensuring that I remain at the forefront of the industry.
+            </p>
+          </div>
+
+          <!-- Key Focus Areas -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            <div class="p-6 bg-white rounded-xl shadow-lg experience-card">
+              <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                <i data-feather="layout" class="w-6 h-6 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Architecture Design</h3>
+              <p class="text-gray-600">Creating scalable and maintainable application architectures
+              </p>
             </div>
 
-            <!-- Additional Skills Tags -->
-            <div class="mt-16 flex flex-wrap justify-center gap-4">
-                <span class="px-6 py-2 bg-blue-50 text-blue-700 rounded-full font-medium">Django</span>
-                <span class="px-6 py-2 bg-green-50 text-green-700 rounded-full font-medium">MongoDB</span>
-                <span class="px-6 py-2 bg-purple-50 text-purple-700 rounded-full font-medium">AI & ML</span>
-                <span class="px-6 py-2 bg-indigo-50 text-indigo-700 rounded-full font-medium">PyTorch</span>
-                <span class="px-6 py-2 bg-pink-50 text-pink-700 rounded-full font-medium">Stable Diffusion</span>
+            <div class="p-6 bg-white rounded-xl shadow-lg experience-card">
+              <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                <i data-feather="users" class="w-6 h-6 text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Team Leadership</h3>
+              <p class="text-gray-600">Leading development teams and mentoring junior developers</p>
             </div>
-x            
+          </div>
+
+          <!-- Professional Stats -->
+          <div class="flex flex-wrap gap-8 mt-12">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">3+</div>
+              <div class="text-gray-600">Years Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">25+</div>
+              <div class="text-gray-600">Projects Completed</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">30+</div>
+              <div class="text-gray-600">Happy Clients</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Projects Section with Filters -->
-    <section id="projects" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-        <!-- Decorative Background Elements -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
+      <!-- Right Column - Experience & Skills -->
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6">Professional Journey</h3>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900">Featured Projects</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-                <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">Exploring innovative solutions through technology
+          <!-- Experience Timeline -->
+          <div class="space-y-8">
+            <div class="relative pl-8 border-l-2 border-blue-200">
+              <div class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"></div>
+              <div class="mb-1 flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-gray-900">AI Engineer & OSINET Engineer</h4>
+                <span class="text-sm text-gray-500">2024 - Present</span>
+              </div>
+              <p class="text-gray-600">
+                Currently, I am working as a Full Stack Developer & AI Engineer at Gensis Technology. I am leading the development of Orion Search Engine, a scalable web crawler and search engine leveraging Selenium, Django, Docker, and Elasticsearch. Additionally, I am working on 3oc Cup, a social engagement mobile application developed with React Native and Django. My role involves architecting high-performance applications, optimizing AI models, and managing cloud-based deployments. With a strong background in AI, full-stack development, and automation, I continue to push the boundaries of innovation, ensuring that my projects deliver exceptional user experiences and cutting-edge technological solutions.
+              </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-blue-200">
+              <div class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"></div>
+              <div class="mb-1 flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-gray-900">Full-Stack Developer</h4>
+                <span class="text-sm text-gray-500">2022 - 2023</span>
+              </div>
+              <p class="text-gray-600">
+                As a Full Stack Developer at Funsol Technologies, I worked on multiple large-scale projects, including FunMob, a mobile ad management system similar to Google AdMob. I built the backend using Django and PostgreSQL while integrating React.js and Django REST Framework (DRF) for frontend and API development. During this time, I also transitioned into AI-powered application development, working on Cognise, a text-to-image and image-to-image tool using Stable Diffusion, and FunSwap, a face-swapping product. Additionally, I gained hands-on experience with Docker, VPS hosting, DigitalOcean, and AI model integration. In early 2024, I joined Mobify Technology as an AI Engineer, leading the development of FramMe Photo Editor & Collage, where I built AI-driven features for background removal, face swapping, and image enhancement using PyTorch, TensorFlow, and ONNX.
+              </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-blue-200">
+              <div class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"></div>
+              <div class="mb-1 flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-gray-900">Frontend Developer</h4>
+                <span class="text-sm text-gray-500">2019 - 2021</span>
+              </div>
+              <p class="text-gray-600">
+                I began my professional journey as a Junior Web Developer at Softigh, where I worked on portfolio websites like Softigh.com, TripleMG, and AlkaramTextile. I was responsible for both frontend and backend development, using HTML, CSS, JavaScript, jQuery, Bootstrap, and custom PHP with MySQL. I also handled UI/UX design using Figma, ensuring a seamless user experience. This role provided me with a solid foundation in web development and honed my ability to create dynamic and responsive websites. Additionally, I worked as a Backend Developer at Greelogix (2022) on the Chekmate project, implementing key functionalities such as user management, SMS/email notifications, and reporting features using Laravel and MySQL.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Focus -->
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6">Current Focus</h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-feather="trending-up" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Performance Optimization</h4>
+                <p class="text-gray-600">Enhancing application performance and user experience</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-feather="shield" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Security Implementation</h4>
+                <p class="text-gray-600">Implementing robust security measures and best practices
                 </p>
+              </div>
             </div>
 
-            <!-- Enhanced Filter System -->
-            <div class="flex flex-wrap justify-center gap-4 mb-12">
-                <button class="px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition-all hover:shadow-lg active" data-filter="all">
-                    All Projects
-                </button>
-                <button class="px-6 py-2 rounded-full bg-white text-gray-700 font-medium border border-gray-200 hover:border-blue-500 hover:text-blue-600 transition-all" data-filter="web">
-                    <i data-feather="globe" class="w-4 h-4 inline-block mr-2"></i>Web Apps
-                </button>
-                <button class="px-6 py-2 rounded-full bg-white text-gray-700 font-medium border border-gray-200 hover:border-blue-500 hover:text-blue-600 transition-all" data-filter="backend">
-                    <i data-feather="server" class="w-4 h-4 inline-block mr-2"></i>Backend
-                </button>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-feather="code" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Modern Technologies</h4>
+                <p class="text-gray-600">Exploring and implementing cutting-edge tech solutions</p>
+              </div>
             </div>
-
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Church Management System -->
-                <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/funmob.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <p class="text-sm">A mobile ad management system similar to Google AdMob, built with Django and PostgreSQL. It enables efficient ad placement and tracking, featuring a frontend developed with HTML, CSS, JavaScript, jQuery, Ajax, and Bootstrap. Deployed on a DigitalOcean VPS.</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-900">FunMob Ads Management system</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">HTML/CSS/Javascript</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">DRF</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://funsol.cloud/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="globe" class="w-4 h-4 mr-2"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/khitran-AB/funsol_adntwk" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/cognise_web.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <p class="text-sm">A Generative AI-powered tool for text-to-image and image-to-image transformations. Built with React for the frontend and Django for the backend, it offers advanced AI-driven image generation capabilities.</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Cognise AI Generation Tool</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">React</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">DRF</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Generative AI</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://cognise.art/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="globe" class="w-4 h-4 mr-2"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/alphadeveloper12/Cognize_AI" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Source
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/orion.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <p class="text-sm">A search engine designed to crawl and retrieve data from various
-                                hidden websites. Leveraging Selenium for web crawling, the project
-                                involves scalable architecture and high-performance data handling.</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Orion Intelligence Searh Engine</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Mongo DB</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Elasticsearch </span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">HTML/CSS</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">Fast API's</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Scrapping</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://orion.genesistechnologies.org/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="globe" class="w-4 h-4 mr-2"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/msmannan00/Orion-Search" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/3oc.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <p class="text-sm">A mobile application developed for user engagement and social
-                                interaction. I built both the frontend and backend for this app using
-                                React Native and Django, ensuring seamless integration and optimal
-                                performance.</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-900">3oC Three of Cups</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">React/React Native</span>
-                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">DRF</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://www.3oc.world/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="globe" class="w-4 h-4 mr-2"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/alphadeveloper12/3oc-frontend-test" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-
-                <!-- M-Pesa PHP SDK -->
-                <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="backend">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/faceswap.png" alt="M-Pesa PHP SDK" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <p class="text-sm">A powerful AI-driven API for seamless face swapping in images and videos. Built using deep learning frameworks like PyTorch and OpenCV, it ensures high-quality and realistic face transformations for various applications.</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-900">face-swapping API</h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Django</span>
-                            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">REST API</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">AI Development</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">TensorFlow</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">ONNX</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PyTorch</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">scikit-learn</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">OpenCV</span>
-
-
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://github.com/alphadeveloper12/FaceSwap" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="backend">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/rag.png" alt="M-Pesa PHP SDK" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <p class="text-sm">An AI-powered Retrieval-Augmented Generation (RAG) system designed to assist vendors on MawadOnline. It provides intelligent recommendations, answers queries, and streamlines product selection by combining real-time data retrieval with advanced language models.</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-900">RAG Vendor Guide Assistant for MawadOnline
-                        </h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python</span>
-
-    <!-- Backend & API -->
-    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">FastAPI</span>
-    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Django REST Framework</span>
-    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">GraphQL</span>
-
-    <!-- AI & ML Models -->
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">RAG (Retrieval-Augmented Generation)</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">LangChain</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">LLMs (GPT, Llama, Claude, etc.)</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Vector Databases</span>
-
-    <!-- ML Frameworks -->
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">TensorFlow</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">ONNX</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PyTorch</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">scikit-learn</span>
-    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">OpenCV</span>
-
-    <!-- Database & Storage -->
-    <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">PostgreSQL</span>
-    <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">MongoDB</span>
-    <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">Pinecone</span>
-    <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">Weaviate</span>
-
-    <!-- Deployment & DevOps -->
-    <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">Docker</span>
-    <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">Kubernetes</span>
-    <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">AWS Lambda</span>
-    <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">Cloudflare</span>
-
-    <!-- Frontend & UI -->
-    <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">React.js</span>
-    <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">Next.js</span>
-    <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">Tailwind CSS</span>
-
-    <!-- Authentication & Security -->
-    <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">OAuth 2.0</span>
-    <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">JWT Authentication</span>
-    <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">Zero Trust Security</span>
-
-
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://github.com/yazanrisheh/RAG-Multimodal" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                View Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<section id="skills" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+  <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
 
-        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900">Technical Expertise</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+      <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+        Combining modern technologies with provenmethodologies to deliver exceptional solutions
+      </p>
+    </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900">Let's Create Something Together</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-                <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-                    Have a project in mind? Let's discuss how we can bring your ideas to life.
-                </p>
-            </div>
-
-            <div >
-                <div class="space-y-6">
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-feather="map-pin" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-900">Location</h3>
-                                <p class="text-gray-600">Islamabad. Pakistan</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-feather="mail" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-900">Email</h3>
-                                <a href="mailto:syedumairshah81@gmail.com" class="text-blue-600 hover:text-blue-800">
-                                    syedumairshah81@gmail.com
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-feather="phone" class="w-6 h-6 text-blue-600"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-900">Phone</h3>
-                                <a href="tel:+923037072526" class="text-blue-600 hover:text-blue-800">
-                                    +(92) 303 7072526
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="flex space-x-4 mt-8">
-                        <a href="https://github.com/alphadeveloper12" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
-                            <i data-feather="github" class="w-6 h-6 text-gray-600"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/syed-umair-ul-hassan-03412b100/" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
-                            <i data-feather="linkedin" class="w-6 h-6 text-gray-600"></i>
-                        </a>
-                        
-                        <a href="https://www.facebook.com/umair.hassan.169067/" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
-                            <i data-feather="facebook" class="w-6 h-6 text-gray-600"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-               
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Frontend Development -->
+      <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+        <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+          <i data-feather="layout" class="w-8 h-8 text-blue-600"></i>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300">
-        <!-- Main Footer Content -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                <!-- Brand Column -->
-                <div class="space-y-6">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl">
-                            AD
-                        </div>
-                        <span class="text-2xl font-bold text-white">Alpha Developer</span>
-                    </div>
-                    <p class="text-gray-400">
-                        Crafting digital experiences through innovative development and thoughtful design.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/codexoft-ke" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                            <i data-feather="github" class="w-5 h-5"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/codexoft-ke" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                            <i data-feather="linkedin" class="w-5 h-5"></i>
-                        </a>
-                        <a href="https://x.com/codexoft_ke" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                            <i data-feather="twitter" class="w-5 h-5"></i>
-                        </a>
-                        <a href="https://www.facebook.com/codexoftke" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                            <i data-feather="facebook" class="w-5 h-5"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div>
-                    <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AI Development</a> </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API's Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">TechnicalConsultation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Code Review</a></li>
-                    </ul>
-                </div>
-
-               
+        <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">React.js</span>
+              <span class="text-sm text-blue-600 font-semibold">Advanced</span>
             </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[90%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">React Native</span>
+              <span class="text-sm text-blue-600 font-semibold">Intermediate</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[75%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">HTML5 / CSS3 / JavaScript</span>
+              <span class="text-sm text-blue-600 font-semibold">Advanced</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[95%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">Bootstrap / Tailwind CSS</span>
+              <span class="text-sm text-blue-600 font-semibold">Advanced</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[90%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">jQuery / Ajax</span>
+              <span class="text-sm text-blue-600 font-semibold">Intermediate</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[80%] h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Development -->
+      <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+        <div class="w-14 h-14 bg-green-50 rounded-lg flex items-center justify-center mb-6">
+          <i data-feather="server" class="w-8 h-8 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">Python / Django</span>
+              <span class="text-sm text-green-600 font-semibold">Advanced</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[95%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">Django REST Framework</span>
+              <span class="text-sm text-green-600 font-semibold">Advanced</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[90%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">PHP</span>
+              <span class="text-sm text-green-600 font-semibold">Advanced</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[90%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">MySQL / PostgreSQL</span>
+              <span class="text-sm text-green-600 font-semibold">Intermediate</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[85%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">MongoDB</span>
+              <span class="text-sm text-green-600 font-semibold">Intermediate</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[75%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">REST APIs / GraphQL</span>
+              <span class="text-sm text-green-600 font-semibold">Advanced</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[90%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-gray-700 font-medium">AWS / Docker / VPS Hosting</span>
+              <span class="text-sm text-green-600 font-semibold">Intermediate</span>
+            </div>
+            <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div class="w-[80%] h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-all duration-1000"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional Skills Tags -->
+    <div class="mt-16 flex flex-wrap justify-center gap-4">
+      <span class="px-6 py-2 bg-blue-50 text-blue-700 rounded-full font-medium">Django</span>
+      <span class="px-6 py-2 bg-green-50 text-green-700 rounded-full font-medium">MongoDB</span>
+      <span class="px-6 py-2 bg-purple-50 text-purple-700 rounded-full font-medium">AI & ML</span>
+      <span class="px-6 py-2 bg-indigo-50 text-indigo-700 rounded-full font-medium">PyTorch</span>
+      <span class="px-6 py-2 bg-pink-50 text-pink-700 rounded-full font-medium">Stable Diffusion</span>
+    </div>
+    x
+  </div>
+</section>
+
+<!-- Projects Section with Filters -->
+<section id="projects" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+  <!-- Decorative Background Elements -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900">Featured Projects</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+      <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">Exploring innovative solutions through technology
+      </p>
+    </div>
+
+    <!-- Enhanced Filter System -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button class="px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition-all hover:shadow-lg active" data-filter="all">
+        All Projects
+      </button>
+      <button class="px-6 py-2 rounded-full bg-white text-gray-700 font-medium border border-gray-200 hover:border-blue-500 hover:text-blue-600 transition-all" data-filter="web">
+        <i data-feather="globe" class="w-4 h-4 inline-block mr-2"></i>Web Apps
+      </button>
+      <button class="px-6 py-2 rounded-full bg-white text-gray-700 font-medium border border-gray-200 hover:border-blue-500 hover:text-blue-600 transition-all" data-filter="backend">
+        <i data-feather="server" class="w-4 h-4 inline-block mr-2"></i>Backend
+      </button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Church Management System -->
+      <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/funmob.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-sm">A mobile ad management system similar to Google AdMob, built with Django and PostgreSQL. It enables efficient ad placement and tracking, featuring a frontend developed with HTML, CSS, JavaScript, jQuery, Ajax, and Bootstrap. Deployed on a DigitalOcean VPS.</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">FunMob Ads Management system</h3>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">HTML/CSS/Javascript</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">DRF</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="https://funsol.cloud/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+              Website
+            </a>
+            <a href="https://github.com/khitran-AB/funsol_adntwk" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="github" class="w-4 h-4 mr-2"></i>
+              View Source
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/cognise_web.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-sm">A Generative AI-powered tool for text-to-image and image-to-image transformations. Built with React for the frontend and Django for the backend, it offers advanced AI-driven image generation capabilities.</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">Cognise AI Generation Tool</h3>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">React</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">DRF</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Generative AI</span>
+
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="https://cognise.art/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+              Website
+            </a>
+            <a href="https://github.com/alphadeveloper12/Cognize_AI" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="github" class="w-4 h-4 mr-2"></i>
+              View Source
+            </a>
+          </div>
         </div>
 
-       
-    </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <!-- Cloudflare Pages Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a31a850541d24dfeb682f07973e468f4"}'></script>
-    <!-- Cloudflare Pages Analytics -->
+      </div>
+      <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/orion.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-sm">A search engine designed to crawl and retrieve data from various
+              hidden websites. Leveraging Selenium for web crawling, the project
+              involves scalable architecture and high-performance data handling.</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">Orion Intelligence Searh Engine</h3>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Mongo DB</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Elasticsearch </span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">HTML/CSS</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">Fast API's</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Scrapping</span>
+
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="https://orion.genesistechnologies.org/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+              Website
+            </a>
+            <a href="https://github.com/msmannan00/Orion-Search" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="github" class="w-4 h-4 mr-2"></i>
+              View Source
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="web">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/3oc.png" alt="Gospel Admin System" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-sm">A mobile application developed for user engagement and social
+              interaction. I built both the frontend and backend for this app using
+              React Native and Django, ensuring seamless integration and optimal
+              performance.</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">3oC Three of Cups</h3>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python Django</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PostgreSQL</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">React/React Native</span>
+            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">DRF</span>
+
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="https://www.3oc.world/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+              Website
+            </a>
+            <a href="https://github.com/alphadeveloper12/3oc-frontend-test" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="github" class="w-4 h-4 mr-2"></i>
+              View Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- M-Pesa PHP SDK -->
+      <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="backend">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/faceswap.png" alt="M-Pesa PHP SDK" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-sm">A powerful AI-driven API for seamless face swapping in images and videos. Built using deep learning frameworks like PyTorch and OpenCV, it ensures high-quality and realistic face transformations for various applications.</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">face-swapping API</h3>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Django</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">REST API</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">AI Development</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">TensorFlow</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">ONNX</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PyTorch</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">scikit-learn</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">OpenCV</span>
+
+
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="https://github.com/alphadeveloper12/FaceSwap" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="github" class="w-4 h-4 mr-2"></i>
+              View Source
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300" data-category="backend">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/rag.png" alt="M-Pesa PHP SDK" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-sm">An AI-powered Retrieval-Augmented Generation (RAG) system designed to assist vendors on MawadOnline. It provides intelligent recommendations, answers queries, and streamlines product selection by combining real-time data retrieval with advanced language models.</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900">RAG Vendor Guide Assistant for MawadOnline
+          </h3>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python</span>
+
+            <!-- Backend & API -->
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">FastAPI</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Django REST Framework</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">GraphQL</span>
+
+            <!-- AI & ML Models -->
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">RAG (Retrieval-Augmented Generation)</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">LangChain</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">LLMs (GPT, Llama, Claude, etc.)</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Vector Databases</span>
+
+            <!-- ML Frameworks -->
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">TensorFlow</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">ONNX</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">PyTorch</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">scikit-learn</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">OpenCV</span>
+
+            <!-- Database & Storage -->
+            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">PostgreSQL</span>
+            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">MongoDB</span>
+            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">Pinecone</span>
+            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">Weaviate</span>
+
+            <!-- Deployment & DevOps -->
+            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">Docker</span>
+            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">Kubernetes</span>
+            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">AWS Lambda</span>
+            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-medium">Cloudflare</span>
+
+            <!-- Frontend & UI -->
+            <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">React.js</span>
+            <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">Next.js</span>
+            <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+
+            <!-- Authentication & Security -->
+            <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">OAuth 2.0</span>
+            <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">JWT Authentication</span>
+            <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">Zero Trust Security</span>
+
+
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="https://github.com/yazanrisheh/RAG-Multimodal" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+              <i data-feather="github" class="w-4 h-4 mr-2"></i>
+              View Source
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+
+  <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900">Let's Create Something Together</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+      <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+        Have a project in mind? Let's discuss how we can bring your ideas to life.
+      </p>
+    </div>
+
+    <div>
+      <div class="space-y-6">
+        <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-feather="map-pin" class="w-6 h-6 text-blue-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900">Location</h3>
+              <p class="text-gray-600">Islamabad. Pakistan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-feather="mail" class="w-6 h-6 text-blue-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900">Email</h3>
+              <a href="mailto:syedumairshah81@gmail.com" class="text-blue-600 hover:text-blue-800">
+                syedumairshah81@gmail.com
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-feather="phone" class="w-6 h-6 text-blue-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900">Phone</h3>
+              <a href="tel:+923037072526" class="text-blue-600 hover:text-blue-800">
+                +(92) 303 7072526
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex space-x-4 mt-8">
+          <a href="https://github.com/alphadeveloper12" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+            <i data-feather="github" class="w-6 h-6 text-gray-600"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/syed-umair-ul-hassan-03412b100/" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+            <i data-feather="linkedin" class="w-6 h-6 text-gray-600"></i>
+          </a>
+
+          <a href="https://www.facebook.com/umair.hassan.169067/" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+            <i data-feather="facebook" class="w-6 h-6 text-gray-600"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300">
+  <!-- Main Footer Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <!-- Brand Column -->
+      <div class="space-y-6">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl">
+            AD
+          </div>
+          <span class="text-2xl font-bold text-white">Alpha Developer</span>
+        </div>
+        <p class="text-gray-400">
+          Crafting digital experiences through innovative development and thoughtful design.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/alphadeveloper12" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i data-feather="github" class="w-5 h-5"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/syed-umair-ul-hassan-03412b100/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i data-feather="linkedin" class="w-5 h-5"></i>
+          </a>
+          <a href="https://www.facebook.com/umair.hassan.169067/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i data-feather="facebook" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+          <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+        <ul class="space-y-3">
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">AI Development</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API's Development</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">TechnicalConsultation</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Code Review</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="assets/js/script.js"></script>
+<!-- Cloudflare Pages Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a31a850541d24dfeb682f07973e468f4"}'></script>
+<!-- Cloudflare Pages Analytics -->
 </body>
 
 </html>
